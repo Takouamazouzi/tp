@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="cssstylehealth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+   <section>
+    <nav>
+        <div class="logo">
+            <img src="images/téléchargement.png">
+        </div>
+        <ul>
+            
+            <li><a href="#Acceuil">Acceuil</a></li>
+            <li><a href="#apropos" onclick="console.log('Lien cliqué')">A propos</a></li>
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#Avis">Avis</a></li>
+            <li><a href="#Commander">Commander</a></li>
+        
+           
+           
+        </ul>
+        <div class="icon">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <i id="panier" class="fa-solid fa-cart-shopping"></i>
+            <i id="userIcon" class="fa-solid fa-user"></i>
+        </div>
+       <div id="loginForm">
+        <h3>Connecter </h3>
+            <input type="Nom" placeholder="Votre nom" class="box">
+            <input type="Prénom" placeholder="Votre prénom" class="box">
+            <input type="email" id="email" class="box" placeholder="Votre Email" required>
+            <span class="error-message"></span>
+            <input type="password" id="password" class="box" placeholder=" Votre mot de passe" required>
+            <span class="error-message"></span>
+            <input type="Submit" value="Connecter" class="btn">
+       </div>
+    </nav>
+    <div class="main">
+        <div class="men_text">
+            <h1>Mangez <span>Bien</span><br>Vivez mieux !</h1>
+        </div>
+        <div class="main_image">
+            <img src="images/be83f6fcfd9ac2e1678a5295b2970d12.jpg" alt="">
+        </div>
+    </div>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla labore magni sed unde corrupti? Consequuntur unde dolorem omnis maiores? Hic veritatis nemo doloribus! Pariatur fugiat dolorum doloremque, consectetur laborum ullam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit animi aperiam praesentium enim voluptate magni corporis optio totam assumenda accusamus eius vitae atque dignissimos, ut, impedit vero. Fugit, porro delectus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odit, maxime dignissimos ipsam praesentium nobis. Minus aliquid a, architecto deserunt nisi sunt, atque asperiores ipsum aliquam alias veritatis consectetur nemo.
+    </p>
+   
+   </section>
+   <div class="apropos" id="apropos">
+    <div class="apropos_main">
+        <div class="image">
+            <img src="images/11.jpg" alt="">
+        </div>
+        <div class="apropos_text">
+            <h1><span>A</span>Propos</h1>
+            <h3>Pourquoi vous nous choisissez?</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias placeat sunt odio. Laboriosam quidem laudantium dignissimos error est similique quis, hic accusantium minus eaque, unde laborum facere velit impedit sint.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed necessitatibus officiis cumque pariatur quam, ipsa dignissimos ipsam recusandae neque veritatis voluptatum tenetur, illum facere autem laudantium saepe iusto! Explicabo, suscipit!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eligendi nulla, omnis ea error consequuntur incidunt assumenda non tempora voluptate quam quibusdam voluptatibus molestiae ipsa quisquam consequatur est porro odit!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, necessitatibus laboriosam? Sunt sequi ex architecto assumenda consectetur velit quibusdam, doloribus amet optio officia repellat id incidunt, veritatis, libero minus. Iure.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias reiciendis deserunt nulla culpa explicabo, tempore in animi voluptas fugiat eum ex natus esse beatae quaerat porro quo a sed autem.
+            </p>
+        </div>
+    </div>
+    
+   </div>
+   <h2>Menu</h2>
+   <div class="menu">
+    <div class="filters">
+        <button class="filter-btn active" onclick="filterMenu('all')">Tout</button>
+        <button class="filter-btn" onclick="filterMenu('pizza')">Pizza</button>
+        <button class="filter-btn" onclick="filterMenu('pasta')">Pasta</button>
+        <button class="filter-btn" onclick="filterMenu('grille')">Grille</button>
+        <button class="filter-btn" onclick="filterMenu('sucré')">Sucré</button>
+        <button class="filter-btn" onclick="filterMenu('boisson')">Boisson</button>
+    </div>
+
+
+
+    <div class="menu-items">
+        <div class="item pizza">
+            <img src="images/pizza7.jpg" alt="">
+            <h4 class="card-title">Pizza</h4><div class="card-price">
+                <div class="price ">1000 DA</div>
+                <i class="fa-solid fa-plus add-to-card"></i>
+            </div>
+        </div>
+        
+        <div class="item pizza">
+            <img src="images/pizza3.jpg" alt="">
+            <h4 class="">Margherita Pizza</h4>
+            <div class="card-price">
+                <div class="price ">1000 DA</div>
+                <i class="fa-solid fa-plus add-to-card"></i>
+            </div>
+        </div>
+        <div class="item pizza">
+            <img src="images/pizza5.jpg" alt="">
+            <h4 class="card-title">Pizza</h4>
+            <div class="card-price">
+                <div class="price ">1000 DA</div>
+                <i class="fa-solid fa-plus add-to-card"></i>
+            </div>
+        </div>
+        
+        <div class="item pizza">
+            <img src="images/pizza2.jpg" alt="">
+            <h4 class="card-title">Pizza</h4>
+            <div class="card-price">
+                <div class="price ">1000 DA</div>
+                <i class="fa-solid fa-plus add-to-card"></i>
+            </div>
+        </div>
+        <div class="item pizza">
+            <img src="images/pizza3.jpg" alt="">
+            <h4 class="card-title">Pizza</h4>
+            <div class="card-price">
+                <div class="price ">1000 DA</div>
+                <i class="fa-solid fa-plus add-to-card"></i>
+            </div>
+        </div>
+        
+
+        <div class="item pasta">
+            <img src="carbonara.jpg" alt="">
+            <h4 class="card-title">Pizza</h4>
+            <div class="card-price">
+                <div class="price ">1000 DA</div>
+                <i class="fa-solid fa-plus add-to-card"></i>
+            </div>
+        </div>
+
+        <div class="item pasta">
+            <img src="arrabbiata.jpg" alt="">
+            <h4 class="card-title">Pizza</h4>
+            <div class="card-price">
+                <div class="price ">1000 DA</div>
+                <i class="fa-solid fa-plus add-to-card"></i>
+            </div>
+        </div>
+
+        <div class="item soups">
+            <img src="chicken_soup.jpg" alt="">
+            <h4 class="card-title">Pizza</h4>
+            <div class="card-price">
+                <div class="price ">1000 DA</div>
+                <i class="fa-solid fa-plus add-to-card"></i>
+            </div>
+        </div>
+
+        <div class="item soups">
+            <img src="tomato_soup.jpg" alt="">
+            <h4 class="card-title">Pizza</h4>
+            <div class="card-price">
+                <div class="price ">1000 DA</div>
+                <i class="fa-solid fa-plus add-to-card"></i>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-close">
+                <i class="fa-solid fa-close"></i>
+            </div>
+                <div class="card-menu">
+                    <h3>Mes achats</h3>
+                    <div class="card-tems">test 1</div>
+                </div>
+                <div class="sidebar--footer">
+                    <div class="total--amount">
+                        <h5>Total</h5>
+                        <div class="card-total"> 0.00 DA</div>
+                    </div>
+                    <button class="quitter-btn"> Quitter</button>
+                </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="jsfinal.js"></script>
+</body>
+</html>
